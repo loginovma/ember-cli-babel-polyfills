@@ -98,11 +98,11 @@ module.exports = {
       this._isBabel7 ? '@babel/preset-env' : 'babel-preset-env'
     );
 
-    return babel.transform('import "@babel/polyfill";', {
+    return babel.transform('import "core-js/stable"; import "regenerator-runtime/runtime";', {
       presets: [
         [
           presetEnvPath,
-          { targets: this._getTargets(targets), useBuiltIns: 'entry' },
+          { targets: this._getTargets(targets), useBuiltIns: 'entry', 'corejs': 3 },
         ],
       ],
     }).code;
