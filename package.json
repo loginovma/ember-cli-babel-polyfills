@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-babel-polyfills",
-  "version": "1.0.3",
+  "version": "2.0.1",
   "description": "Split builds for babel polyfills",
   "keywords": [
     "ember-addon"
@@ -26,7 +26,10 @@
     "broccoli-merge-trees": "^3.0.2",
     "broccoli-persistent-filter": "^2.1.1",
     "broccoli-rollup": "^2.1.1",
+    "core-js": "^3.2.1",
     "ember-cli-version-checker": "^3.0.1",
+    "regenerator-runtime": "^0.13.3",
+    "resolve": "^1.11.1",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^4.0.0"
   },
